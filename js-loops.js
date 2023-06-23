@@ -42,6 +42,7 @@ let totalNumber = 0;
 number.forEach(sumOfNumber)
 function sumOfNumber(value){
 totalNumber = totalNumber + value
+
 }
 console.log(totalNumber);
 
@@ -62,7 +63,31 @@ for(let name of people){
 }
 
 
-let text = "hello"
+let text = "Hello"
 for(let char of text){
     console.log(char);
 }
+
+
+// Loop over objects
+
+let user = {
+    name:'shoiab',
+    class:'3rd',
+    rollno:20,
+    section:'c',
+    height:'4ft'
+  }
+  let value = Object.values(user);
+  console.log(value);
+
+  for(let val of value){
+    console.log(val);
+  }
+  
+  let entries = Object.entries(user);
+  console.log(entries)
+  for(let ent of entries){
+    console.log(`${ent[0]}: ${ent[1]}`)
+  }
+
